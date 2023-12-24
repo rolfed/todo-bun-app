@@ -6,10 +6,17 @@ Please install locally before runing the project:
 [Bun](https://bun.sh/)
 
 # Pre reqs
+
+Copy .env-example to .env
+```bash
+cp .env-example .env
+```
+
+Run Postgres, Jaeger (Open Telemetry), and Elastic Search
 ```bash
 docker-compose up
 ```
-The local .env file included is for devlopment purposes only. Do not include sensative
+The local .env-example file included is for devlopment purposes only. Do not include sensative
 credentials or data in this file.
 
 To install dependencies:
