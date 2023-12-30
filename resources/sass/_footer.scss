@@ -1,0 +1,19 @@
+.footer {
+	display: flex;
+	justify-items: center;
+
+	height: 50vh;
+	background-color: #333;
+	padding: 1rem;
+	text-align: center;
+}
+
+.social-links a {
+	color: #fff;
+	margin-right: 1rem;
+	text-decoration: none;
+}
+
+.social-links a:last-child {
+	margin-right: 0;
+}

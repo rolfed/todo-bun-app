@@ -1,0 +1,88 @@
+/* Reset default margin and padding */
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* mixin for font map with default font size */
+:root {
+  /*** for animations menu ***/
+  --bar-width: 60px;
+  --bar-height: 8px;
+  --hamburger-gap: 6px;
+  --foreground: #333;
+  --background: white;
+  --hamburger-margin-left: 1rem;
+  --animation-timing: 200ms ease-in-out;
+  --hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+  --x-width: calc(var(--hamburger-height) * 1.41421356237);
+  /* ******************************/
+}
+
+/* font sizes map */
+/* font colors map */
+/* borders map */
+/* background colors */
+/* section colors */
+/*header section */
+.input {
+  text-align: center;
+  width: clamp(20rem, 50vw, 35rem);
+  height: clamp(2rem, 12vw, 5rem);
+  margin: clamp(2rem, 12vw, 5rem) auto 0rem clamp(2rem, 5vw, 3rem);
+  /* padding-top: 2rem; */
+  /* color: white; */
+  border: 5px solid rgb(29, 37, 183);
+  box-shadow: 0 0 5px 1px #205cb1;
+  background-color: transparent;
+  /* border-radius: 1rem; */
+  color: rgb(244, 165, 19);
+  font-family: Stick No Bills;
+  padding: 0.5rem;
+  margin-bottom: 0.5rem;
+  /* small frame inside Welcome to ACJ */
+}
+.input .header-h1 {
+  /* padding-top: 1rem; */
+  font-size: clamp(2rem, 4vw, 9rem);
+}
+.input .submit {
+  position: relative;
+  top: 2rem;
+  left: 5rem;
+}
+.input .p-graph {
+  font-size: clamp(1rem, 1.3vw, 2rem);
+  color: rgb(178, 206, 171);
+  border-width: 3.5px;
+  border-style: solid;
+  border-color: rgb(229, 159, 29);
+  border-radius: 10px;
+  margin: 0 0 0 0;
+  padding: 0.2rem;
+}
+
+.footer {
+  display: flex;
+  justify-items: center;
+  height: 50vh;
+  background-color: #333;
+  padding: 1rem;
+  text-align: center;
+}
+
+.social-links a {
+  color: #fff;
+  margin-right: 1rem;
+  text-decoration: none;
+}
+
+.social-links a:last-child {
+  margin-right: 0;
+}/*# sourceMappingURL=styles.css.map */

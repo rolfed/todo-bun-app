@@ -1,0 +1,64 @@
+/* mixin for font map with default font size */
+@mixin font-size($size: "header-main") {
+	@if map-has-key($font-sizes, $size) {
+		font-size: map-get($font-sizes, $size);
+	} @else {
+		@error 'Invalid font size: #{$size}. Please choose from header-main, header-h1, header-section,header-minor, body-paragraph, names or title.';
+	}
+}
+
+@mixin font-color($color: "paragraph-color") {
+	@if map-has-key($font-colors, $color) {
+		color: map-get($font-colors, $color);
+	} @else {
+		@error 'Invalid font color: #{$color}. Please choose from the font-color map.';
+	}
+}
+
+@mixin font-family($family: "sans-serif") {
+	@if map-has-key($font-family, $family) {
+		font-family: map-get($font-family, $family);
+	} @else {
+		@error 'Invalid font family: #{$family}. Please choose from the font family map.';
+	}
+}
+
+@mixin border(
+	$width: "default-border-width",
+	$style: "default-border-style",
+	$color: "default-border-color",
+	$radius: "default-border-radius",
+	$margin: "default-border-margin"
+) {
+	@if map-has-key($borders, $width) {
+		border-width: map-get($borders, $width);
+		border-style: map-get($borders, $style);
+		border-color: map-get($borders, $color);
+		border-radius: map-get($borders, $radius);
+		margin: map-get($borders, $margin);
+	} @else {
+		@error 'Invalid border #{$borders}. Please choose from the borders map.';
+	}
+}
+
+@mixin background-color($color: "default-background-color") {
+	@if map-has-key($bckgrnd-colors, $color) {
+		background-color: map-get($bckgrnd-colors, $color);
+	} @else {
+		@error 'Invalid background color #{$color}. Please choose from the background color map.';
+	}
+}
+
+@mixin section-color($color: "sect-color-1") {
+	@if map-has-key($section-colors, $color) {
+		background-color: map-get($section-colors, $color);
+	} @else {
+		@error 'Invalid section color #{$color}. Please choose from the section color map.';
+	}
+}
+
+@mixin cc() {
+	top: 100%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+}

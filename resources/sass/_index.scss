@@ -1,0 +1,45 @@
+/*header section */
+.input {
+	text-align: center;
+	width: clamp(20rem, 50vw, 35rem);
+	height: clamp(2rem, 12vw, 5rem);
+	margin: clamp(2rem, 12vw, 5rem) auto 0rem clamp(2rem, 5vw, 3rem);
+	/* padding-top: 2rem; */
+	/* color: white; */
+	border: 5px solid rgb(29, 37, 183);
+	box-shadow: 0 0 5px 1px #205cb1;
+	background-color: transparent;
+	/* border-radius: 1rem; */
+	@include font-color("header-minor-color");
+	font-family: Stick No Bills;
+	padding: 0.5rem;
+	margin-bottom: 0.5rem;
+
+	.header-h1 {
+		/* padding-top: 1rem; */
+		@include font-size("header-h1");
+	}
+
+	.submit{
+		position:relative;
+		top: 2rem;
+		left: 5rem;
+
+	}
+	
+	/* small frame inside Welcome to ACJ */
+	.p-graph {
+		@include font-size("tagline");
+		@include font-color("tagline-color");
+		@include border(
+			"p-border-width",
+			"p-border-style",
+			"p-border-color",
+			"p-border-radius",
+			"default-border-margin"
+		);
+		padding: 0.2rem;
+	}
+}
+
+

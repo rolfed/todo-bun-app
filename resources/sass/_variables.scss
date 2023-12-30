@@ -1,0 +1,13 @@
+:root {
+	/*** for animations menu ***/
+	--bar-width: 60px;
+	--bar-height: 8px;
+	--hamburger-gap: 6px;
+	--foreground: #333;
+	--background: white;
+	--hamburger-margin-left: 1rem;
+	--animation-timing: 200ms ease-in-out;
+	--hamburger-height: calc(var(--bar-height) * 3 + var(--hamburger-gap) * 2);
+	--x-width: calc(var(--hamburger-height) * 1.41421356237);
+	/* ******************************/
+}

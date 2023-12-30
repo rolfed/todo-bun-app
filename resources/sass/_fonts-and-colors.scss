@@ -1,0 +1,90 @@
+@import url("https://fonts.googleapis.com/css?family=Poppins:100,200,300,400,500,600,700,800,900");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Bungee+Spice&display=swap");
+
+/* font sizes map */
+$font-sizes: (
+	header-main: clamp(2rem, 4vw, 11rem),
+	header-h1: clamp(2rem, 4vw, 9rem),
+	header-section: clamp(2rem, 4vw, 3.5rem),
+	header-minor: clamp(0.8rem, 1vw, 1.5rem),
+	paragraph: clamp(1rem, 1.2vw, 1.5rem),
+	names: clamp(0.8rem, 1vw, 1.5rem),
+	titles: clamp(1rem, 1.5vw, 1.3rem),
+	nav-links: 14px,
+	tagline: clamp(1rem, 1.3vw, 2rem),
+);
+
+/* font colors map */
+$font-colors: (
+	header-color: beige,
+	header-h1-color: darkblue,
+	header-section-color: black,
+	header-minor-color: rgb(244, 165, 19),
+	paragraph-color: rgb(52, 64, 70),
+	names-color: rgb(27, 24, 24),
+	titles-color: rgb(239, 239, 150),
+	nav-links-color: rgb(12, 21, 153),
+	tagline-color: rgb(178, 206, 171),
+	btn-text: rgb(212, 212, 204),
+	contact-tagline: yellow,
+);
+
+$font-family: (
+	poppins: "Poppins",
+	bungee-spice: "Bungee Spice",
+	stick-no-bills: "Stick No Bills",
+);
+
+/* borders map */
+$borders: (
+	small-pic-border-color: rgb(69, 66, 60),
+	logo-border-width: 2px,
+	logo-border-radius: 5%,
+	logo-border-style: solid,
+
+	default-border-color: black,
+	default-border-width: 2px,
+	default-border-radius: 3px,
+	default-border-style: solid,
+	default-border-margin: 0 0 0 0,
+
+	p-border-color: rgb(229, 159, 29),
+	p-border-width: 3.5px,
+	p-border-radius: 10px,
+	p-border-margin: 1rem 0 1rem 0,
+	p-border-style: solid,
+
+	dropdown-border-color: rgb(83, 81, 76),
+	dropdown-border-width: 3.5px,
+	dropdown-border-radius: 5px,
+	dropdown-border-style: solid,
+
+	bio-border-color: rgb(147, 95, 23),
+	bio-border-width: 3.5px,
+	bio-border-radius: 5px,
+	bio-border-style: solid,
+	bio-border-margin: 1rem 0 1rem 0,
+);
+
+/* background colors */
+$bckgrnd-colors: (
+	main-dropdown-color: rgb(206, 206, 195),
+	burger-dropdown-color: darkblue,
+	navigation-backgroun-color: black,
+	section-background-color: rgb(244, 165, 19),
+	default-background-color: rgb(243, 236, 236),
+	button-color: rgb(84, 81, 76),
+);
+
+/* section colors */
+$section-colors: (
+	sect-color-0: rgb(241, 245, 245),
+	sect-color-1: rgb(189, 189, 182),
+	sect-color-2: rgb(225, 228, 204),
+	sect-color-3: rgb(190, 154, 154),
+	sect-color-4: rgb(241, 210, 151),
+	sect-color-5: rgb(243, 236, 236),
+	sect-color-light: rgb(189, 189, 182),
+	sect-color-dark: rgb(70, 63, 63),
+);
