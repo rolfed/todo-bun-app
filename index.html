@@ -1,21 +1,25 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="./resources/css/styles.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./resources/css/styles.css" />
+    <script src="./resources/js/index.js" async></script>
+    
     <title>ToDo Application</title>
-</head>
-<body>
-    <div>
-        <div>
-            <div class="input">New Task  <input type="textbox" value="Click here to add new task." name="New Task" id="1" maxlength="50" size="25">
-                <input class="submit" type="button" value="Submit">
-            </div>
-        </div>
+  </head>
+  <body>
+    <div id="myDIV" class="header">
+      <h2 style="margin:5px">To Do List</h2>
+      <input type="text" id="todo-input" placeholder="Enter A New Task Here Then Click Add or Enter..">
+      <span onclick="addNewElement()" class="addBtn">Add</span>
     </div>
-
-
-</body>
+    
+    <ul id="todo-UL">
+      
+    </ul>
+    
+    
+  </body>
+  
 </html>
-
