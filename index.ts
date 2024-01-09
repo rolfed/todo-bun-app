@@ -4,5 +4,8 @@ const server = Bun.serve({
     return new Response("Bun!");
   },
 });
+ 
+
+console.log('DB Connection failed');
 
 console.log(`Listening on http://localhost:${server.port} ...`);
