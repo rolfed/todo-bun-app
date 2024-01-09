@@ -8,4 +8,6 @@ const server = Bun.serve({
 
 console.log('DB Connection failed');
 
+console.log('hello world');
+
 console.log(`Listening on http://localhost:${server.port} ...`);
